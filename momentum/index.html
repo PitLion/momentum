@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>momentum</title>
+</head>
+<body>
+  <header class="header">
+    <div class="player">
+      <div class="player-controls">
+        <button class="play-prev player-icon"></button>
+        <button class="play player-icon"></button>
+        <button class="play-next player-icon"></button>
+        <button class="my-player player-icon open-pop-up"></button>
+      </div>
+      <ul class="play-list"></ul>
+    </div>
+    <div class="setting-button">
+      <button class="setting-btn player-icon open-setting"></button>
+    </div>
+
+    <div class="settings">
+      <h2>Settings</h2>
+      <div class="lang-container">
+        <label for="language">Language:</label>
+        <select class="change-lang" id="language">
+          <option value="en" selected>English</option>
+          <option value="ru">Russian</option>
+        </select>
+      </div>
+      <div class="photo-source-container">
+        <label for="photo-source">Photo Source:</label>
+        <select class="change-photo-source" id="photo-source">
+            <option value="github">GitHub</option>
+            <option value="unsplash">Unsplash</option>
+            <option value="flickr">Flickr</option>
+        </select>
+        <div id="photo-tags" style="display: block;">
+          <input type="text" id="photo-tags-input" placeholder="enter a photo category">
+      </div>
+      </div>
+      <div class="hide-block-container">
+        <h4>Hide Blocks:</h4>
+        <input type="checkbox" id="hide-time" name="hide-time" checked>
+        <label for="hide-time">Time</label>
+        <br>
+        <input type="checkbox" id="hide-date" name="hide-date" checked>
+        <label for="hide-date">Date</label>
+        <br>
+        <input type="checkbox" id="hide-greeting" name="hide-greeting" checked>
+        <label for="hide-greeting">Greeting</label>
+        <br>
+        <input type="checkbox" id="hide-quote" name="hide-quote" checked>
+        <label for="hide-quote">Quote of the Day</label>
+        <br>
+        <input type="checkbox" id="hide-weather" name="hide-weather" checked>
+        <label for="hide-weather">Weather</label>
+        <br>
+        <input type="checkbox" id="hide-audio" name="hide-audio" checked>
+        <label for="hide-audio">Audio Player</label>
+        <br>
+        <input type="checkbox" id="hide-todolist" name="hide-todolist" checked>
+        <label for="hide-todolist">To Do List</label>
+      </div>
+      <div class="nav-close">
+        <span class="close-line"></span>
+        <span class="close-line"></span>
+    </div>
+    </div>
+    
+    <div class="weather">
+      <input type="text" class="city" value="Minsk"/>
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+    <div class="pop-up-player">
+      <div class="audio-player">
+        <div class="my-player-controls">
+            <div class="player-buttons">
+                <button class="prev-song audio-btn"><i class="fas fa-step-backward"></i></button>
+                <button class="play-pause audio-btn"><i class="fas fa-play"></i></button>
+                <button class="next-song audio-btn"><i class="fas fa-step-forward"></i></button>
+            </div>
+            <span class="song-name">Song name</span>
+            <span class="song-author">Song author</span>
+            <div class="time-container">
+                <span id="current-time">0:00</span>
+                <span id="duration">0:00</span>
+            </div>
+            <div class="progress-container">
+                <div class="progress-bar"></div>
+            </div>
+            <div class="volume-container">
+                <div class="volume-up"></div>
+                <input type="range" class="volume-slider" min="0" max="1" step="0.1" value="1">
+            </div>
+        </div>
+        <audio src="" class="audio"></audio>
+     </div>
+     <div class="song-list">
+        <ul class="audio-my-list">
+    
+        </ul>
+     </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting"></span>
+      <input type="text" class="name" placeholder="User" value=""/>
+    </div>
+
+    <div class="task-container">
+      <div id="newtask">
+        <input type="text" class="task-placeholder" onclick="event.stopPropagation()" placeholder="Task to be done..">
+        <button id="push" onclick="event.stopPropagation()" class="push-add">Add</button>
+      </div>
+      <div id="tasks"></div>
+    </div>
+
+    <div class="icon-task-container">
+      <button class="icon-task"></button>
+    </div>
+
+  </main>
+  <footer class="footer">
+    <button class="change-quote"></button>
+    <div class="quote-author">
+      <div class="quote"></div>
+      <div class="author"></div>
+    </div>
+    <ul class="footer-list">
+      <li class="footer-item"><a class="footer-link" href="https://github.com/PitLion"> <img src="assets/img/GitThumbnail.png" alt="logo" height="20"></a></li>
+      <li class="footer-time">&copy; 2022 Piotr Bausiuk</li>
+      <li class="footer-item"><a class="footer-link" href="https://rs.school/js/"><img src="assets/img/rsschool.png" alt="logo" height="20"></a></li>
+  </ul>
+  </footer>
+  <script type="module" src="js/script.js"></script>
+  <script src="js/audioplayer.js"></script>
+  <script src="js/todo.js"></script>
+  <!--<script src="js/hideblock.js"></script>-->
+  <script src="js/index.js"></script>
+</body>
+</html>

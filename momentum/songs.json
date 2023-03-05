@@ -1,0 +1,17 @@
+[
+  {
+    "src": "./audio/StarWalkin.mp3",
+    "title": "StarWalkin",
+    "artist": "Lil Nas X"
+  },
+  {
+    "src": "./audio/Awaken.mp3",
+    "title": "Awaken",
+    "artist": "League of Legends"
+  },
+  {
+    "src": "./audio/Phoenix.mp3",
+    "title": "Phoenix",
+    "artist": "Cailin Russo, Chrissy Costanza"
+  }
+]

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+    <link rel="stylesheet" href="styles-old.css">
+</head>
+<body>
+<div class="container">
+    <div class="cover-container">
+        <img id="cover" src="cover1.jpg" alt="Cover">
+    </div>
+    <div class="info-container">
+        <h1 id="title">Song 1</h1>
+        <h2 id="artist">Artist 1</h2>
+        <div class="controls-container">
+            <button id="prev"><i class="fas fa-backward"></i></button>
+            <button id="play"><i class="fas fa-play"></i></button>
+            <button id="next"><i class="fas fa-forward"></i></button>
+        </div>
+        <div class="progress-container">
+            <div id="progress"></div>
+        </div>
+        <div class="time-container">
+            <span id="current-time">0:00</span>
+            <span id="duration">0:00</span>
+        </div>
+    </div>
+</div>
+<ul class="playlist">
+    <li class="playlist-item" data-index="0">
+        <img src="../images/StarWalkin.jpg" alt="Cover">
+        <div class="song-info">
+            <h3>Star Walkin</h3>
+            <p>Artist 1</p>
+        </div>
+    </li>
+    <li class="playlist-item" data-index="1">
+        <img src="../images/Awaken.jpg" alt="Cover">
+        <div class="song-info">
+            <h3>Awaken</h3>
+            <p>Artist 2</p>
+        </div>
+    </li>
+    <li class="playlist-item" data-index="2">
+        <img src="../images/Phoenix.jpg" alt="Cover">
+        <div class="song-info">
+            <h3>Phoenix</h3>
+            <p>Artist 3</p>
+        </div>
+    </li>
+</ul>
+<audio id="audio"></audio>
+<script src="script-old.js"></script>
+</body>
+</html>

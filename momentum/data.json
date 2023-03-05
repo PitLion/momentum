@@ -1,0 +1,52 @@
+[
+	{ 
+		"quote" : {
+			"en": "The only sin is ignorance",
+			"ru": "Единственный грех - это невежество"
+		}, 
+		"source" : {
+			"en": "Christopher Marlowe",
+			"ru": "Кристофер Марлоу"
+		} 
+	},
+	{
+		"quote" : {
+			"en": "A man is his own easiest dupe, for what he wishes to be true he generally believes to be true",
+			"ru": "Человека легче всего одурачить самому, ибо то, что он хочет считать правдой, он обычно считает правдой"
+		},
+		"source" : {
+			"en": "Demosthenes",
+			"ru": "Демосфен"
+		}
+	},
+	{
+		"quote" : {
+			"en": "A lie can travel halfway around the world while the truth is putting on its shoes", 
+			"ru": "Ложь может объехать полмира, в то время как правда надевает свою обувь"
+		},
+		"source" : {
+			"en": "Mark Twain",
+			"ru": "Марк Твен"
+	    }
+    },
+    {
+		"quote" : {
+			"en": "Your time is limited, so don’t waste it living someone else’s life", 
+			"ru": "Ваше время ограничено, так что не тратьте его впустую, живя чужой жизнью"
+		},
+		"source" : {
+			"en": "Steve Jobs",
+			"ru": "Стив Джобс"
+	    }
+	},
+    {
+		"quote" : {
+			"en": "Be wiser than other people, if you can; but do not tell them so", 
+			"ru": "Будьте мудрее других людей, если можете; но не говорите им об этом"
+		},
+		"source" : {
+			"en": "Lord Chesterfield",
+			"ru": "Лорд Честерфилд"
+	    }
+	}
+]
